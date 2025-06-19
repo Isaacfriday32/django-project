@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo" style="color: rgb(65, 94, 36); color: powderblue; font-size: 28px; ">
+            Isaac <span><code class=""></code></span></div>
+        <nav>
+            <ul>
+                <li><a href=" {% url 'homepage' %}">Home</a></li>
+                <li><a href=" {% url 'contacts' %}">Contact</a></li>
+                <li><a href=" {% url 'Isaac' %}">Profile</a></li>
+                <li><a href=" {% url 'allProjects' %}">Project</a>
+                
+                
+            <!-- if the user is an admin show the add button so he can add more project done else don't show -->
+
+                {% if user.is_authenticated and user.is_superuser %}
+                    <li><a href=" {% url 'add_project' %}">Add</a>
+                {% endif %}
+
+                    <!-- if the user is logged in the then show a login button  -->
+                {% if user.is_authenticated %}
+                    <form action="{% url 'user_logout' %}" method="post">
+                        {% csrf_token %}
+                        <button>Log out</button>
+                    </form>
+                {% else %}
+                    <li><a href=" {% url 'user_login' %}">Login</a>
+                {% endif %} 
+                    
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+
+        {% endblock content%}
+    </main>
+
+    <footer>
+        <p>All right reserved &copy; 2025</p>
+        <div class="logo">
+           Isaac <span style="color: brown;">Code</span> 
+        </div>
+    </footer>
+</body>
+</html>

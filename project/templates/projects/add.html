@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+ {% block content %}
+
+ <h2>Welcome </h2>
+ <p>add more project here</p>
+
+   <form action="" method="post"  enctype="multipart/form-data"class="addproject">
+      {% csrf_token %}
+      {{form}}
+      <button>submit</button>
+   </form>
+
+{% endblock content %}

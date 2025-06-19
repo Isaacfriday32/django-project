@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: burlywood;
+    font-weight: bold;
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+ul > li > a:hover {
+    color: whitesmoke;
+}
+
+/* hero section */
+/* ***************************** */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500%;
+    height: 20%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hero-text {
+    width: 400px;
+    font-size: 10px;
+}
+.hero-text > h2{
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.hero-text > button {
+    background-color: blue;
+    color: aqua;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 3px groove;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    border: 3px inset #313131;
+    background-color: transparent;
+    box-shadow: 3px 3px 5px ;
+
+}
+.hero-text > button:hover {
+    color: aliceblue;
+    background-color: black;
+    border: 3px outset #bbb;
+}
+
+.hero > img {
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+
+
+}
+
+/*
+********************* 
+Project Page Styling
+********************
+*/
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+    background-color: #b6b6b6;
+}
+
+.card{
+    background-color: #77a577;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* assignment */
+
+.check-box > img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+ 
+}
+    
+.check-box {
+  background-color: #a2a6af;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* login page */
+
+.login{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   height: 80vh;
+   align-items: center;
+   margin-top: 5%; 
+}
+
+.login > {
+    padding: 30px;
+    background-color: #313131;
+    border-radius: 20px;
+    height: 400px;
+}
+.login > h1 {
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: -3px 5px #313131;
+}
+.login > div{
+    padding: 30px;
+    width: 50%;
+    height: 130%;
+    border-radius: 20px;
+    background-color: #000000;
+}
+.login > div > p{
+    color: #77a577;
+}
+.login_form {
+    gap: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login_form > div > input{
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: cornsilk;
+    outline: cornsilk;
+}
+.login_btn{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 60px;
+    border: cornsilk;
+    background-color: cyan;
+}
+.login_form > div > label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: larger;
+}
+.action{
+    text-align: center;
+}
+
+/* sign up page */
+.signUp{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   height: 80vh;
+   align-items: center;
+   margin-top: 5%; 
+}
+.signUp > {
+    padding: 30px;
+    background-color: #313131;
+    border-radius: 20px;
+    height: 400px;
+
+}
+.signUp > h1 {
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: -3px 5px #313131;
+}
+
+.signUp_form {
+    gap: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
