@@ -232,3 +232,21 @@ Project Page Styling
     align-items: center;
     flex-direction: column;
 }
+.signUp_form > div > input{
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: cornsilk;
+    outline: cornsilk;
+}
+
+.signUp_btn{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 60px;
+    border: cornsilk;
+    background-color: cyan;
+}
